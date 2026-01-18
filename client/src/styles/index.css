@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables - Sanasa Brand Colors */
+:root {
+  --primary-green: #2D5A27;
+  --secondary-green: #4A8C3F;
+  --accent-gold: #D4A574;
+  --light-green: #E8F5E8;
+  --text-dark: #1A1A1A;
+  --text-gray: #6B7280;
+}
+
+/* Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-gray-800 antialiased;
+    font-family: 'Inter', 'Noto Sans Sinhala', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-gray-900;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  /* Primary Button */
+  .btn-primary {
+    @apply bg-green-700 hover:bg-green-800 text-white font-semibold 
+           py-3 px-6 rounded-lg transition-all duration-300 
+           shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    @apply bg-white border-2 border-green-700 text-green-700 
+           font-semibold py-3 px-6 rounded-lg transition-all duration-300
+           hover:bg-green-700 hover:text-white;
+  }
+
+  /* Card Component */
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden 
+           transition-all duration-300 hover:shadow-xl;
+  }
+
+  /* Section Container */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16;
+  }
+
+  /* Section Title */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4;
+  }
+
+  /* Section Subtitle */
+  .section-subtitle {
+    @apply text-lg text-gray-600 max-w-3xl;
+  }
+
+  /* Form Input */
+  .form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg 
+           focus:ring-2 focus:ring-green-500 focus:border-transparent
+           transition-all duration-200;
+  }
+
+  /* Form Label */
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-2;
+  }
+
+  /* Navigation Link */
+  .nav-link {
+    @apply text-gray-700 hover:text-green-700 font-medium 
+           transition-colors duration-200 relative;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 
+           bg-green-700 transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  /* Product Card */
+  .product-card {
+    @apply bg-white rounded-2xl shadow-lg p-6 border border-gray-100
+           hover:border-green-200 transition-all duration-300
+           hover:shadow-xl;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .badge-green {
+    @apply bg-green-100 text-green-800;
+  }
+
+  .badge-gold {
+    @apply bg-amber-100 text-amber-800;
+  }
+
+  /* Hero Section */
+  .hero-gradient {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+  }
+
+  /* News Ticker */
+  .news-ticker {
+    @apply bg-green-800 text-white py-2 overflow-hidden;
+  }
+
+  .news-ticker-content {
+    animation: scroll-left 30s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  /* Text Gradient */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-green-700 to-green-500;
+  }
+
+  /* Glassmorphism */
+  .glass {
+    @apply bg-white/30 backdrop-blur-md;
+  }
+
+  /* Custom Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-100 rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-green-500 rounded-full;
+  }
+
+  /* Animation Utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Sinhala Font Support */
+@font-face {
+  font-family: 'Noto Sans Sinhala';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/notosanssinhala/v26/yMJ2MJBya43H0SUF_WmcBEEf4rQVO2P524iFfp8.woff2') format('woff2');
+}
