@@ -56,8 +56,8 @@ export default function ContactPage() {
               <div className="bg-white rounded-lg shadow p-6">
                 <h3 className="text-xl font-bold mb-4">📍 Visit Us</h3>
                 <p className="text-gray-700">
-                  Main Street<br />
-                  Wilbagedara<br />
+                  Wilbagedara,<br />
+                 Bandarakoswaththa, <br />
                   Sri Lanka
                 </p>
               </div>
@@ -65,8 +65,8 @@ export default function ContactPage() {
               <div className="bg-white rounded-lg shadow p-6">
                 <h3 className="text-xl font-bold mb-4">📞 Call Us</h3>
                 <p className="text-gray-700">
-                  <a href="tel:+94123456789" className="text-sanasa-blue-700 hover:underline">
-                    +94 (0) 12-345-6789
+                  <a href="tel:+94373456789" className="text-sanasa-blue-700 hover:underline">
+                    +94 (0) 37-229-3845
                   </a>
                 </p>
               </div>

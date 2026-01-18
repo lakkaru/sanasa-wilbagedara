@@ -211,7 +211,7 @@ Submit a contact form inquiry
   "phone": "+94771234567",
   "subject": "Membership Inquiry",
   "message": "I want to become a member...",
-  "address": "123 Main Street"
+  "address": "123 "
 }
 ```
 
@@ -314,7 +314,7 @@ Submit loan application
     "whatsapp": "+94771234567",
     "email": "john@example.com",
     "address": {
-      "line1": "123 Main Street",
+      "line1": "123 ",
       "line2": "Wilbagedara",
       "city": "Wilbagedara",
       "district": "Bandarakoswaththa",

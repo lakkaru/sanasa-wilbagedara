@@ -20,10 +20,10 @@ const WhatsAppButton = ({
       aria-label="Chat on WhatsApp"
     >
       {/* Pulse Animation */}
-      <span className="absolute inset-0 rounded-full bg-sanasa-blue-500 animate-ping opacity-25"></span>
+      <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-25"></span>
       
       {/* Button */}
-      <div className="relative flex items-center justify-center w-14 h-14 bg-sanasa-blue-500 rounded-full shadow-lg hover:bg-sanasa-blue-600 transition-all duration-300 hover:scale-110">
+      <div className="relative flex items-center justify-center w-14 h-14 bg-[#25D366] rounded-full shadow-lg hover:bg-[#1ebe5d] transition-all duration-300 hover:scale-110">
         <svg
           className="w-7 h-7 text-white"
           fill="currentColor"

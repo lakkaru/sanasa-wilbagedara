@@ -89,8 +89,8 @@ const LoansPage = () => {
 
   const eligibilityDocs = [
     'National Identity Card (NIC) copy',
-    'Proof of income (salary slip or business documents)',
     'SANASA membership proof',
+    'Two SANASA members as guarantors (gurrenters) are required for all loans',
   ];
 
   const applicationSteps = [

@@ -21,10 +21,25 @@ export default function HomePage() {
                 Your trusted thrift and credit cooperative serving the Wilbagedara community since 1995.
               </p>
               <div className="flex gap-4">
-                <Link to="/loans" className="btn-primary">
+                <Link
+                  to="/loans"
+                  className="btn-primary bg-white text-sanasa-blue-800 border-2 border-sanasa-blue-700 hover:bg-sanasa-blue-100 hover:text-sanasa-blue-900 focus:ring-4 focus:ring-sanasa-blue-200 shadow-lg"
+                  style={{
+                    textShadow: '0 1px 8px rgba(7,154,232,0.18)',
+                    fontWeight: 800,
+                    letterSpacing: '0.02em',
+                  }}
+                >
                   Explore Loans
                 </Link>
-                <Link to="/savings" className="btn-secondary">
+                <Link
+                  to="/savings"
+                  className="btn-secondary bg-sanasa-green-700 text-white border-sanasa-green-700 hover:bg-sanasa-green-800 hover:text-white focus:ring-4 focus:ring-sanasa-green-200 shadow-lg"
+                  style={{
+                    fontWeight: 800,
+                    letterSpacing: '0.02em',
+                  }}
+                >
                   Savings Plans
                 </Link>
               </div>

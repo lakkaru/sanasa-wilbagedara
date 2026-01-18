@@ -32,6 +32,18 @@ module.exports = {
           800: '#8B5E3C',
           900: '#6D4C41',
         },
+        'sanasa-green': {
+          50: '#E8F5E9',
+          100: '#C8E6C9',
+          200: '#A5D6A7',
+          300: '#81C784',
+          400: '#66BB6A',
+          500: '#43A047',
+          600: '#388E3C',
+          700: '#2E7D32',
+          800: '#27632A',
+          900: '#1B4D1B',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'Noto Sans Sinhala', 'system-ui', 'sans-serif'],
