@@ -65,8 +65,8 @@ const Navbar = () => {
               className="w-12 h-12 rounded-full object-cover border-2 border-sanasa-blue-700 shadow"
               style={{ background: '#fff' }}
             />
-            <div className="hidden sm:block">
-              <h1 className="text-lg font-bold text-sanasa-blue-800">Sanasa Wilbagedara</h1>
+            <div>
+              <h1 className="text-lg font-bold text-sanasa-blue-800 leading-tight">Sanasa Wilbagedara</h1>
               <p className="text-xs text-gray-500">සණස විල්බාගෙදර</p>
             </div>
           </Link>
