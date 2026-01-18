@@ -59,9 +59,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-sanasa-blue-700 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">S</span>
-            </div>
+            <img
+              src={require('../../assets/logo.png')}
+              alt="Sanasa Wilbagedara Logo"
+              className="w-12 h-12 rounded-full object-cover border-2 border-sanasa-blue-700 shadow"
+              style={{ background: '#fff' }}
+            />
             <div className="hidden sm:block">
               <h1 className="text-lg font-bold text-sanasa-blue-800">Sanasa Wilbagedara</h1>
               <p className="text-xs text-gray-500">සණස විල්බාගෙදර</p>
