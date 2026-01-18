@@ -242,12 +242,66 @@ const LoansPage = () => {
       {/* Loan Calculator Section */}
       <section className="bg-gray-50 py-16">
         <div className="section-container">
-          <div className="text-center mb-8">
+          <div className="text-center mb-12">
             <h2 className="section-title">Calculate Your EMI</h2>
             <p className="section-subtitle mx-auto">
               Use our loan calculator to estimate your monthly installments
             </p>
           </div>
+
+          {/* Payment Method Information */}
+          <div className="bg-white rounded-xl shadow-md p-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-bold text-sanasa-green-700 mb-4">💳 Reducing Balance Method</h3>
+                <p className="text-gray-700 mb-4">
+                  Sanasa Bank uses the <strong>Reducing Balance Payment Method</strong> for all loans. This method calculates interest on the remaining principal balance each month, ensuring you pay less interest over time.
+                </p>
+                <div className="bg-green-50 border-l-4 border-green-600 p-4 rounded">
+                  <h4 className="font-semibold text-gray-900 mb-2">How it Works:</h4>
+                  <ul className="space-y-2 text-sm text-gray-700">
+                    <li>✓ Interest is calculated only on the outstanding balance</li>
+                    <li>✓ As you repay, your balance reduces</li>
+                    <li>✓ Interest portion decreases each month</li>
+                    <li>✓ Principal portion increases each month</li>
+                    <li>✓ Total EMI remains fixed throughout the loan term</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-sanasa-green-700 mb-4">📊 Example Comparison</h3>
+                <div className="bg-blue-50 rounded-lg p-4 mb-4">
+                  <p className="text-sm text-gray-600 mb-3"><strong>For a Rs. 100,000 loan at 14% for 24 months:</strong></p>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Fixed Monthly EMI:</span>
+                      <span className="font-bold text-green-700">Rs. 4,900</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Total Interest Paid:</span>
+                      <span className="font-bold text-orange-600">Rs. 17,600</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Total Amount Payable:</span>
+                      <span className="font-bold text-blue-700">Rs. 117,600</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-green-50 rounded-lg p-4">
+                  <p className="text-sm font-semibold text-gray-900 mb-2">✨ Benefits:</p>
+                  <ul className="space-y-1 text-sm text-gray-700">
+                    <li>• Transparent interest calculation</li>
+                    <li>• Early repayment saves interest</li>
+                    <li>• Industry standard method</li>
+                    <li>• Predictable monthly payments</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <LoanCalculator />
         </div>
       </section>
