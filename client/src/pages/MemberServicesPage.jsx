@@ -21,43 +21,53 @@ export default function MemberServicesPage() {
 
         {/* Content */}
         <section className="max-w-6xl mx-auto px-4 py-16">
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="card">
-              <h3 className="text-2xl font-bold mb-4">Apply for a Loan</h3>
-              <p className="text-gray-600 mb-6">
-                Quick and easy loan application process with low interest rates.
-              </p>
-              <Link to="/loans" className="btn-primary">
-                Apply Now
-              </Link>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            {/* Apply for a Loan */}
+            <div className="card group hover:scale-105 hover:bg-sanasa-blue-50 transition-transform duration-300 border-t-4 border-sanasa-blue-700 rounded-2xl shadow-lg p-8 flex flex-col gap-3 md:gap-4 lg:gap-6 h-full">
+              <div className="flex items-center mb-4">
+                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-sanasa-blue-100 text-sanasa-blue-700 text-2xl mr-3 shadow">💳</span>
+                <h3 className="text-2xl font-bold">Apply for a Loan</h3>
+              </div>
+              <p className="text-gray-600 mb-6">Quick and easy loan application process with low interest rates.</p>
+              <div className="mt-auto pt-2">
+                <Link to="/loans" className="btn-secondary w-full flex items-center justify-center text-base font-semibold">Apply Now</Link>
+              </div>
             </div>
 
-            <div className="card">
-              <h3 className="text-2xl font-bold mb-4">Loan Calculator</h3>
-              <p className="text-gray-600 mb-6">
-                Calculate your EMI and understand your loan better.
-              </p>
-              <Link to="/loans" className="btn-primary">
-                Calculate EMI
-              </Link>
+            {/* Loan Calculator */}
+            <div className="card group hover:scale-105 hover:bg-sanasa-blue-50 transition-transform duration-300 border-t-4 border-sanasa-blue-500 rounded-2xl shadow-lg p-8 flex flex-col gap-3 md:gap-4 lg:gap-6 h-full">
+              <div className="flex items-center mb-4">
+                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-sanasa-blue-100 text-sanasa-blue-700 text-2xl mr-3 shadow">🧮</span>
+                <h3 className="text-2xl font-bold">Loan Calculator</h3>
+              </div>
+              <p className="text-gray-600 mb-6">Calculate your EMI and understand your loan better.</p>
+              <div className="mt-auto pt-2">
+                <Link to="/loans" className="btn-secondary w-full flex items-center justify-center text-base font-semibold">Calculate EMI</Link>
+              </div>
             </div>
 
-            <div className="card">
-              <h3 className="text-2xl font-bold mb-4">Submit Inquiry</h3>
-              <p className="text-gray-600 mb-6">
-                Have questions? Get in touch with our team.
-              </p>
-              <Link to="/contact" className="btn-primary">
-                Send Inquiry
-              </Link>
+            {/* Submit Inquiry */}
+            <div className="card group hover:scale-105 hover:bg-sanasa-blue-50 transition-transform duration-300 border-t-4 border-sanasa-blue-400 rounded-2xl shadow-lg p-8 flex flex-col gap-3 md:gap-4 lg:gap-6 h-full">
+              <div className="flex items-center mb-4">
+                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-sanasa-blue-100 text-sanasa-blue-700 text-2xl mr-3 shadow">✉️</span>
+                <h3 className="text-2xl font-bold">Submit Inquiry</h3>
+              </div>
+              <p className="text-gray-600 mb-6">Have questions? Get in touch with our team.</p>
+              <div className="mt-auto pt-2">
+                <Link to="/contact" className="btn-secondary w-full flex items-center justify-center text-base font-semibold">Send Inquiry</Link>
+              </div>
             </div>
 
-            <div className="card">
-              <h3 className="text-2xl font-bold mb-4">Membership Info</h3>
-              <p className="text-gray-600 mb-6">
-                Learn about membership benefits and requirements.
-              </p>
-              <button className="btn-primary">Learn More</button>
+            {/* Membership Info */}
+            <div className="card group hover:scale-105 hover:bg-sanasa-blue-50 transition-transform duration-300 border-t-4 border-sanasa-blue-300 rounded-2xl shadow-lg p-8 flex flex-col gap-3 md:gap-4 lg:gap-6 h-full">
+              <div className="flex items-center mb-4">
+                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-sanasa-blue-100 text-sanasa-blue-700 text-2xl mr-3 shadow">👥</span>
+                <h3 className="text-2xl font-bold">Membership Info</h3>
+              </div>
+              <p className="text-gray-600 mb-6">Learn about membership benefits and requirements.</p>
+              <div className="mt-auto pt-2">
+                <button className="btn-secondary w-full flex items-center justify-center text-base font-semibold">Learn More</button>
+              </div>
             </div>
           </div>
 
