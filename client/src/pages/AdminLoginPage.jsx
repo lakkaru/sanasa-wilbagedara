@@ -29,10 +29,10 @@ export default function AdminLoginPage() {
     <>
       <SEOHead title="Admin Login - Sanasa Bank" />
 
-      <div className="min-h-screen bg-gradient-to-r from-sanasa-green-700 to-sanasa-green-900 flex items-center justify-center px-4">
+      <div className="min-h-screen bg-gradient-to-r from-sanasa-blue-700 to-sanasa-blue-900 flex items-center justify-center px-4">
         <div className="w-full max-w-md">
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <h1 className="text-3xl font-bold text-center text-sanasa-green-700 mb-8">
+            <h1 className="text-3xl font-bold text-center text-sanasa-blue-700 mb-8">
               Admin Portal
             </h1>
 

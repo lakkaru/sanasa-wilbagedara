@@ -317,7 +317,7 @@ Submit loan application
       "line1": "123 Main Street",
       "line2": "Wilbagedara",
       "city": "Wilbagedara",
-      "district": "Kurunegala",
+      "district": "Bandarakoswaththa",
       "postalCode": "60000"
     }
   },
@@ -529,7 +529,7 @@ Create new activity
   "eventDate": "2026-01-15",
   "location": {
     "name": "Wilbagedara School",
-    "address": "Main Street, Wilbagedara"
+    "address": " Wilbagedara"
   },
   "tags": ["environment", "community"],
   "isFeatured": true

@@ -19,9 +19,9 @@ const LoansPage = () => {
       "name": "Sanasa Bank Wilbagedara",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Main Street, Wilbagedara",
+        "streetAddress": " Wilbagedara",
         "addressLocality": "Wilbagedara",
-        "addressRegion": "Kurunegala",
+        "addressRegion": "Bandarakoswaththa",
         "addressCountry": "LK"
       }
     },
@@ -90,8 +90,6 @@ const LoansPage = () => {
   const eligibilityDocs = [
     'National Identity Card (NIC) copy',
     'Proof of income (salary slip or business documents)',
-    'Utility bill for address verification',
-    'Two passport-size photographs',
     'SANASA membership proof',
   ];
 
@@ -122,11 +120,11 @@ const LoansPage = () => {
     <>
       <SEOHead
         title="Low Interest Loans in Wilbagedara | Loan Schemes"
-        description="Apply for low-interest loans at Sanasa Bank Wilbagedara. Personal loans, SME business loans (Divi Saviya), and agricultural loans for Kurunegala residents. Fast approval."
+        description="Apply for low-interest loans at Sanasa Bank Wilbagedara. Personal loans, SME business loans (Divi Saviya), and agricultural loans for Bandarakoswaththa residents. Fast approval."
         keywords={[
           'Low interest loans Wilbagedara',
           'Sanasa loan',
-          'Personal loan Kurunegala',
+          'Personal loan Bandarakoswaththa',
           'Agricultural loan Sri Lanka',
           'SME loan Sri Lanka',
           'Divi Saviya loan',
@@ -141,22 +139,22 @@ const LoansPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Affordable Loan Schemes for Wilbagedara Community
           </h1>
-          <p className="text-xl text-green-100 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-sanasa-blue-100 max-w-3xl mx-auto mb-8">
             Supporting local dreams with low-interest financing. Personal, business, 
-            and agricultural loans tailored for the Kurunegala community.
+            and agricultural loans tailored for the Bandarakoswaththa community.
           </p>
           <div className="flex flex-wrap justify-center gap-8 text-center">
             <div>
               <p className="text-4xl font-bold">10%</p>
-              <p className="text-green-200 text-sm">Interest from</p>
+              <p className="text-sanasa-blue-200 text-sm">Interest from</p>
             </div>
-            <div className="border-l border-green-400 pl-8">
+            <div className="border-l border-sanasa-blue-400 pl-8">
               <p className="text-4xl font-bold">Rs. 2M</p>
-              <p className="text-green-200 text-sm">Loans up to</p>
+              <p className="text-sanasa-blue-200 text-sm">Loans up to</p>
             </div>
-            <div className="border-l border-green-400 pl-8">
+            <div className="border-l border-sanasa-blue-400 pl-8">
               <p className="text-4xl font-bold">5 Years</p>
-              <p className="text-green-200 text-sm">Tenure up to</p>
+              <p className="text-sanasa-blue-200 text-sm">Tenure up to</p>
             </div>
           </div>
         </div>
@@ -194,15 +192,15 @@ const LoansPage = () => {
                 <div className="grid grid-cols-3 gap-4 mb-6">
                   <div className="bg-gray-50 rounded-lg p-3 text-center">
                     <p className="text-xs text-gray-500 uppercase">Interest</p>
-                    <p className="text-lg font-bold text-green-700">{product.interestRate}</p>
+                    <p className="text-lg font-bold text-sanasa-blue-700">{product.interestRate}</p>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-3 text-center">
                     <p className="text-xs text-gray-500 uppercase">Amount</p>
-                    <p className="text-lg font-bold text-green-700">{product.amount}</p>
+                    <p className="text-lg font-bold text-sanasa-blue-700">{product.amount}</p>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-3 text-center">
                     <p className="text-xs text-gray-500 uppercase">Tenure</p>
-                    <p className="text-lg font-bold text-green-700">{product.tenure}</p>
+                    <p className="text-lg font-bold text-sanasa-blue-700">{product.tenure}</p>
                   </div>
                 </div>
 
@@ -210,7 +208,7 @@ const LoansPage = () => {
                 <ul className="space-y-2 mb-6">
                   {product.features.map((feature, i) => (
                     <li key={i} className="flex items-center text-gray-600">
-                      <svg className="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-5 h-5 text-sanasa-blue-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       {feature}
@@ -253,11 +251,11 @@ const LoansPage = () => {
           <div className="bg-white rounded-xl shadow-md p-8 mb-12">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-2xl font-bold text-sanasa-green-700 mb-4">💳 Reducing Balance Method</h3>
+                <h3 className="text-2xl font-bold text-sanasa-blue-700 mb-4">💳 Reducing Balance Method</h3>
                 <p className="text-gray-700 mb-4">
                   Sanasa Bank uses the <strong>Reducing Balance Payment Method</strong> for all loans. This method calculates interest on the remaining principal balance each month, ensuring you pay less interest over time.
                 </p>
-                <div className="bg-green-50 border-l-4 border-green-600 p-4 rounded">
+                <div className="bg-sanasa-blue-50 border-l-4 border-sanasa-blue-600 p-4 rounded">
                   <h4 className="font-semibold text-gray-900 mb-2">How it Works:</h4>
                   <ul className="space-y-2 text-sm text-gray-700">
                     <li>✓ Interest is calculated only on the outstanding balance</li>
@@ -270,13 +268,13 @@ const LoansPage = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-sanasa-green-700 mb-4">📊 Example Comparison</h3>
+                <h3 className="text-2xl font-bold text-sanasa-blue-700 mb-4">📊 Example Comparison</h3>
                 <div className="bg-blue-50 rounded-lg p-4 mb-4">
                   <p className="text-sm text-gray-600 mb-3"><strong>For a Rs. 100,000 loan at 14% for 24 months:</strong></p>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span className="text-gray-700">Fixed Monthly EMI:</span>
-                      <span className="font-bold text-green-700">Rs. 4,900</span>
+                      <span className="font-bold text-sanasa-blue-700">Rs. 4,900</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-700">Total Interest Paid:</span>
@@ -289,7 +287,7 @@ const LoansPage = () => {
                   </div>
                 </div>
 
-                <div className="bg-green-50 rounded-lg p-4">
+                <div className="bg-sanasa-blue-50 rounded-lg p-4">
                   <p className="text-sm font-semibold text-gray-900 mb-2">✨ Benefits:</p>
                   <ul className="space-y-1 text-sm text-gray-700">
                     <li>• Transparent interest calculation</li>
@@ -313,17 +311,17 @@ const LoansPage = () => {
             <h2 className="section-title mb-6">Eligibility Requirements</h2>
             <div className="space-y-4">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-green-700 font-bold">1</span>
+                <div className="w-10 h-10 bg-sanasa-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-sanasa-blue-700 font-bold">1</span>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Wilbagedara Area Resident</h4>
-                  <p className="text-gray-600 text-sm">Must be a resident of Wilbagedara or nearby areas in Kurunegala District</p>
+                  <p className="text-gray-600 text-sm">Must be a resident of Wilbagedara or nearby areas in Bandarakoswaththa</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-green-700 font-bold">2</span>
+                <div className="w-10 h-10 bg-sanasa-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-sanasa-blue-700 font-bold">2</span>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Age Requirement</h4>
@@ -331,8 +329,8 @@ const LoansPage = () => {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-green-700 font-bold">3</span>
+                <div className="w-10 h-10 bg-sanasa-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-sanasa-blue-700 font-bold">3</span>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">SANASA Membership</h4>
@@ -340,8 +338,8 @@ const LoansPage = () => {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-green-700 font-bold">4</span>
+                <div className="w-10 h-10 bg-sanasa-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-sanasa-blue-700 font-bold">4</span>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Stable Income</h4>
@@ -356,7 +354,7 @@ const LoansPage = () => {
             <ul className="space-y-3">
               {eligibilityDocs.map((doc, i) => (
                 <li key={i} className="flex items-center bg-gray-50 p-4 rounded-lg">
-                  <svg className="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-6 h-6 text-sanasa-blue-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                   <span className="text-gray-700">{doc}</span>
@@ -371,11 +369,11 @@ const LoansPage = () => {
       </section>
 
       {/* Application Process */}
-      <section className="bg-green-800 text-white py-16">
+      <section className="bg-sanasa-blue-800 text-white py-16">
         <div className="section-container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">How to Apply</h2>
-            <p className="text-green-200 max-w-2xl mx-auto">
+            <p className="text-sanasa-blue-200 max-w-2xl mx-auto">
               Getting a loan from Sanasa Wilbagedara is simple and straightforward
             </p>
           </div>
@@ -383,17 +381,17 @@ const LoansPage = () => {
           <div className="grid md:grid-cols-4 gap-6">
             {applicationSteps.map((item) => (
               <div key={item.step} className="text-center">
-                <div className="w-16 h-16 bg-white text-green-800 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                <div className="w-16 h-16 bg-white text-sanasa-blue-800 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   {item.step}
                 </div>
                 <h4 className="font-semibold text-lg mb-2">{item.title}</h4>
-                <p className="text-green-200 text-sm">{item.description}</p>
+                <p className="text-sanasa-blue-200 text-sm">{item.description}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <Link to="/contact" className="bg-white text-green-800 font-semibold py-3 px-8 rounded-lg hover:bg-green-50 transition-colors inline-flex items-center">
+            <Link to="/contact" className="bg-white text-sanasa-blue-800 font-semibold py-3 px-8 rounded-lg hover:bg-sanasa-blue-50 transition-colors inline-flex items-center">
               Start Your Application
               <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

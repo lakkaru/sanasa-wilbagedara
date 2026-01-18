@@ -93,7 +93,7 @@ const LoanCalculator = () => {
           <div>
             <label className="form-label flex justify-between">
               <span>Loan Amount</span>
-              <span className="text-green-700 font-semibold">
+              <span className="text-sanasa-blue-700 font-semibold">
                 {formatCurrency(loanAmount)}
               </span>
             </label>
@@ -104,7 +104,7 @@ const LoanCalculator = () => {
               step="10000"
               value={loanAmount}
               onChange={(e) => setLoanAmount(e.target.value)}
-              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-green-600"
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-sanasa-blue-600"
             />
             <div className="flex justify-between text-xs text-gray-500 mt-1">
               <span>Rs. 10,000</span>
@@ -116,7 +116,7 @@ const LoanCalculator = () => {
           <div>
             <label className="form-label flex justify-between">
               <span>Interest Rate (per annum)</span>
-              <span className="text-green-700 font-semibold">{interestRate}%</span>
+              <span className="text-sanasa-blue-700 font-semibold">{interestRate}%</span>
             </label>
             <input
               type="range"
@@ -125,7 +125,7 @@ const LoanCalculator = () => {
               step="0.5"
               value={interestRate}
               onChange={(e) => setInterestRate(e.target.value)}
-              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-green-600"
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-sanasa-blue-600"
             />
             <div className="flex justify-between text-xs text-gray-500 mt-1">
               <span>5%</span>
@@ -137,7 +137,7 @@ const LoanCalculator = () => {
           <div>
             <label className="form-label flex justify-between">
               <span>Loan Tenure</span>
-              <span className="text-green-700 font-semibold">{tenure} months</span>
+              <span className="text-sanasa-blue-700 font-semibold">{tenure} months</span>
             </label>
             <input
               type="range"
@@ -146,7 +146,7 @@ const LoanCalculator = () => {
               step="6"
               value={tenure}
               onChange={(e) => setTenure(e.target.value)}
-              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-green-600"
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-sanasa-blue-600"
             />
             <div className="flex justify-between text-xs text-gray-500 mt-1">
               <span>6 months</span>
@@ -164,7 +164,7 @@ const LoanCalculator = () => {
                   onClick={() => setLoanAmount(amount)}
                   className={`px-3 py-1 rounded-full text-sm transition-colors ${
                     loanAmount === amount
-                      ? 'bg-green-600 text-white'
+                      ? 'bg-sanasa-blue-600 text-white'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -178,32 +178,32 @@ const LoanCalculator = () => {
         </div>
 
         {/* Result Section */}
-        <div className="bg-gradient-to-br from-green-600 to-green-700 rounded-xl p-6 text-white">
+        <div className="bg-gradient-to-br from-sanasa-blue-600 to-sanasa-blue-700 rounded-xl p-6 text-white">
           <div className="text-center mb-6">
-            <p className="text-green-200 text-sm uppercase tracking-wide">Monthly EMI</p>
+            <p className="text-sanasa-blue-200 text-sm uppercase tracking-wide">Monthly EMI</p>
             <p className="text-4xl md:text-5xl font-bold mt-2">
               {formatCurrency(calculations.emi)}
             </p>
           </div>
 
           <div className="space-y-4">
-            <div className="flex justify-between items-center py-3 border-t border-green-500/30">
-              <span className="text-green-200">Principal Amount</span>
+            <div className="flex justify-between items-center py-3 border-t border-sanasa-blue-500/30">
+              <span className="text-sanasa-blue-200">Principal Amount</span>
               <span className="font-semibold">{formatCurrency(loanAmount)}</span>
             </div>
-            <div className="flex justify-between items-center py-3 border-t border-green-500/30">
-              <span className="text-green-200">Total Interest</span>
+            <div className="flex justify-between items-center py-3 border-t border-sanasa-blue-500/30">
+              <span className="text-sanasa-blue-200">Total Interest</span>
               <span className="font-semibold">{formatCurrency(calculations.totalInterest)}</span>
             </div>
-            <div className="flex justify-between items-center py-3 border-t border-green-500/30">
-              <span className="text-green-200">Total Amount Payable</span>
+            <div className="flex justify-between items-center py-3 border-t border-sanasa-blue-500/30">
+              <span className="text-sanasa-blue-200">Total Amount Payable</span>
               <span className="font-semibold text-lg">{formatCurrency(calculations.totalPayable)}</span>
             </div>
           </div>
 
           {/* Visual Breakdown */}
           <div className="mt-6">
-            <div className="h-4 bg-green-800 rounded-full overflow-hidden flex">
+            <div className="h-4 bg-sanasa-blue-800 rounded-full overflow-hidden flex">
               <div 
                 className="bg-white h-full transition-all duration-300"
                 style={{ 
@@ -211,7 +211,7 @@ const LoanCalculator = () => {
                 }}
               />
               <div 
-                className="bg-green-300 h-full transition-all duration-300"
+                className="bg-sanasa-blue-300 h-full transition-all duration-300"
                 style={{ 
                   width: `${(calculations.totalInterest / calculations.totalPayable) * 100}%` 
                 }}
@@ -223,14 +223,14 @@ const LoanCalculator = () => {
                 Principal
               </span>
               <span className="flex items-center">
-                <span className="w-3 h-3 bg-green-300 rounded-full mr-1"></span>
+                <span className="w-3 h-3 bg-sanasa-blue-300 rounded-full mr-1"></span>
                 Interest
               </span>
             </div>
           </div>
 
           {/* CTA */}
-          <button className="w-full mt-6 bg-white text-green-700 font-semibold py-3 rounded-lg hover:bg-green-50 transition-colors">
+          <button className="w-full mt-6 bg-white text-sanasa-blue-700 font-semibold py-3 rounded-lg hover:bg-sanasa-blue-50 transition-colors">
             Apply for This Loan
           </button>
         </div>
@@ -238,9 +238,9 @@ const LoanCalculator = () => {
         {/* Payment Schedule Table */}
         {calculations.schedule && calculations.schedule.length > 0 && (
           <div className="mt-8 bg-gray-50 rounded-xl overflow-hidden">
-            <div className="bg-sanasa-green-700 text-white px-6 py-4">
+            <div className="bg-sanasa-blue-700 text-white px-6 py-4">
               <h4 className="text-lg font-bold">Amortization Schedule (Reducing Balance)</h4>
-              <p className="text-sm text-green-200 mt-1">Interest calculated on remaining balance</p>
+              <p className="text-sm text-sanasa-blue-200 mt-1">Interest calculated on remaining balance</p>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full">
@@ -260,7 +260,7 @@ const LoanCalculator = () => {
                       <td className="px-4 py-3 text-sm text-right text-gray-700 font-semibold">
                         {formatCurrency(row.emi)}
                       </td>
-                      <td className="px-4 py-3 text-sm text-right text-green-600 font-semibold">
+                      <td className="px-4 py-3 text-sm text-right text-sanasa-blue-600 font-semibold">
                         {formatCurrency(row.principal)}
                       </td>
                       <td className="px-4 py-3 text-sm text-right text-orange-600 font-semibold">

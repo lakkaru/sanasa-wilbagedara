@@ -35,7 +35,7 @@ export default function SavingsPage() {
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero */}
-        <section className="bg-sanasa-green-700 text-white py-12">
+        <section className="bg-sanasa-blue-700 text-white py-12">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="text-4xl font-bold mb-4">Savings Plans</h1>
             <p className="text-lg">Build your financial future with our flexible savings accounts</p>
@@ -47,11 +47,11 @@ export default function SavingsPage() {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {savingsPlans.map((plan) => (
               <div key={plan.name} className="card hover:shadow-lg transition">
-                <h3 className="text-2xl font-bold text-sanasa-green-700 mb-2">{plan.name}</h3>
+                <h3 className="text-2xl font-bold text-sanasa-blue-700 mb-2">{plan.name}</h3>
                 <p className="text-sm text-gray-600 mb-4">For: {plan.target}</p>
                 <div className="space-y-2 mb-6">
-                  <p className="text-lg font-semibold">Interest Rate: <span className="text-sanasa-green-700">{plan.rate}</span></p>
-                  <p className="text-lg font-semibold">Minimum: <span className="text-sanasa-green-700">{plan.min}</span></p>
+                  <p className="text-lg font-semibold">Interest Rate: <span className="text-sanasa-blue-700">{plan.rate}</span></p>
+                  <p className="text-lg font-semibold">Minimum: <span className="text-sanasa-blue-700">{plan.min}</span></p>
                 </div>
                 <p className="text-gray-600 mb-6">{plan.desc}</p>
                 <button className="btn-primary w-full">Learn More</button>
@@ -70,7 +70,7 @@ export default function SavingsPage() {
                 'Regular financial literacy training',
               ].map((benefit) => (
                 <li key={benefit} className="flex items-center">
-                  <span className="text-sanasa-green-700 font-bold mr-3 text-xl">✓</span>
+                  <span className="text-sanasa-blue-700 font-bold mr-3 text-xl">✓</span>
                   <span className="text-gray-700">{benefit}</span>
                 </li>
               ))}

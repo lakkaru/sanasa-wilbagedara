@@ -69,7 +69,7 @@ const loanApplicationSchema = new mongoose.Schema(
         line1: { type: String, required: true },
         line2: String,
         city: { type: String, required: true },
-        district: { type: String, default: 'Kurunegala' },
+        district: { type: String, default: 'Bandarakoswaththa' },
         postalCode: String,
       },
     },

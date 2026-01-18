@@ -12,12 +12,12 @@ export default function HomePage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-sanasa-green-700 to-sanasa-green-900 text-white py-20">
+      <section className="relative bg-gradient-to-r from-sanasa-blue-700 to-sanasa-blue-900 text-white py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-5xl font-bold mb-4">Welcome to Sanasa Bank Wilbagedara</h1>
-              <p className="text-xl mb-6 text-sanasa-green-100">
+              <p className="text-xl mb-6 text-sanasa-blue-100">
                 Your trusted thrift and credit cooperative serving the Wilbagedara community since 1995.
               </p>
               <div className="flex gap-4">
@@ -77,11 +77,11 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-sanasa-green-700 text-white">
+      <section className="py-16 bg-sanasa-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-lg mb-8">Join thousands of satisfied members who trust Sanasa Bank</p>
-          <Link to="/member-services" className="btn-primary bg-white text-sanasa-green-700 hover:bg-gray-100">
+          <Link to="/member-services" className="btn-primary bg-white text-sanasa-blue-700 hover:bg-gray-100">
             Become a Member Today
           </Link>
         </div>

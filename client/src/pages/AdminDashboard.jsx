@@ -28,30 +28,30 @@ export default function AdminDashboard() {
 
       <div className="flex h-screen bg-gray-100">
         {/* Sidebar */}
-        <div className="w-64 bg-sanasa-green-700 text-white p-6">
+        <div className="w-64 bg-sanasa-blue-700 text-white p-6">
           <h2 className="text-2xl font-bold mb-8">Admin Dashboard</h2>
           <nav className="space-y-4">
             <Link
               to="/admin/dashboard/stats"
-              className={`block p-3 rounded ${location.pathname.includes('stats') ? 'bg-sanasa-green-900' : 'hover:bg-sanasa-green-600'}`}
+              className={`block p-3 rounded ${location.pathname.includes('stats') ? 'bg-sanasa-blue-900' : 'hover:bg-sanasa-blue-600'}`}
             >
               📊 Statistics
             </Link>
             <Link
               to="/admin/dashboard/inquiries"
-              className={`block p-3 rounded ${location.pathname.includes('inquiries') ? 'bg-sanasa-green-900' : 'hover:bg-sanasa-green-600'}`}
+              className={`block p-3 rounded ${location.pathname.includes('inquiries') ? 'bg-sanasa-blue-900' : 'hover:bg-sanasa-blue-600'}`}
             >
               💬 Inquiries
             </Link>
             <Link
               to="/admin/dashboard/applications"
-              className={`block p-3 rounded ${location.pathname.includes('applications') ? 'bg-sanasa-green-900' : 'hover:bg-sanasa-green-600'}`}
+              className={`block p-3 rounded ${location.pathname.includes('applications') ? 'bg-sanasa-blue-900' : 'hover:bg-sanasa-blue-600'}`}
             >
               📋 Applications
             </Link>
             <Link
               to="/admin/dashboard/activities"
-              className={`block p-3 rounded ${location.pathname.includes('activities') ? 'bg-sanasa-green-900' : 'hover:bg-sanasa-green-600'}`}
+              className={`block p-3 rounded ${location.pathname.includes('activities') ? 'bg-sanasa-blue-900' : 'hover:bg-sanasa-blue-600'}`}
             >
               🎯 Activities
             </Link>
@@ -62,7 +62,7 @@ export default function AdminDashboard() {
         <div className="flex-1 overflow-auto">
           <div className="bg-white shadow">
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-              <h1 className="text-2xl font-bold text-sanasa-green-700">Dashboard</h1>
+              <h1 className="text-2xl font-bold text-sanasa-blue-700">Dashboard</h1>
               <Link to="/" className="btn-secondary">
                 Back to Site
               </Link>

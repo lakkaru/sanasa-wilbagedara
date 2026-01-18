@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom CSS Variables - Sanasa Brand Colors */
+/* Custom CSS Variables - Sanasa Brand Colors (Primary Blue) */
 :root {
-  --primary-green: #2D5A27;
-  --secondary-green: #4A8C3F;
+  --primary-green: #079AE8; /* primary blue */
+  --secondary-green: #0573AD; /* deep blue */
   --accent-gold: #D4A574;
-  --light-green: #E8F5E8;
+  --light-green: #E6F4FF;
   --text-dark: #1A1A1A;
   --text-gray: #6B7280;
 }
@@ -36,16 +36,16 @@
 @layer components {
   /* Primary Button */
   .btn-primary {
-    @apply bg-green-700 hover:bg-green-800 text-white font-semibold 
-           py-3 px-6 rounded-lg transition-all duration-300 
-           shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+      @apply bg-sanasa-blue-700 hover:bg-sanasa-blue-800 text-white font-semibold 
+        py-3 px-6 rounded-lg transition-all duration-300 
+        shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
   }
 
   /* Secondary Button */
   .btn-secondary {
-    @apply bg-white border-2 border-green-700 text-green-700 
-           font-semibold py-3 px-6 rounded-lg transition-all duration-300
-           hover:bg-green-700 hover:text-white;
+      @apply bg-white border-2 border-sanasa-blue-700 text-sanasa-blue-700 
+        font-semibold py-3 px-6 rounded-lg transition-all duration-300
+        hover:bg-sanasa-blue-700 hover:text-white;
   }
 
   /* Card Component */
@@ -72,7 +72,7 @@
   /* Form Input */
   .form-input {
     @apply w-full px-4 py-3 border border-gray-300 rounded-lg 
-           focus:ring-2 focus:ring-green-500 focus:border-transparent
+           focus:ring-2 focus:ring-sanasa-blue-500 focus:border-transparent
            transition-all duration-200;
   }
 
@@ -83,13 +83,13 @@
 
   /* Navigation Link */
   .nav-link {
-    @apply text-gray-700 hover:text-green-700 font-medium 
+      @apply text-gray-700 hover:text-sanasa-blue-700 font-medium 
            transition-colors duration-200 relative;
   }
 
   .nav-link::after {
     @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 
-           bg-green-700 transition-all duration-300;
+        bg-sanasa-blue-700 transition-all duration-300;
   }
 
   .nav-link:hover::after {
@@ -99,7 +99,7 @@
   /* Product Card */
   .product-card {
     @apply bg-white rounded-2xl shadow-lg p-6 border border-gray-100
-           hover:border-green-200 transition-all duration-300
+          hover:border-sanasa-blue-200 transition-all duration-300
            hover:shadow-xl;
   }
 
@@ -109,7 +109,7 @@
   }
 
   .badge-green {
-    @apply bg-green-100 text-green-800;
+    @apply bg-sanasa-blue-100 text-sanasa-blue-800;
   }
 
   .badge-gold {
@@ -123,7 +123,7 @@
 
   /* News Ticker */
   .news-ticker {
-    @apply bg-green-800 text-white py-2 overflow-hidden;
+    @apply bg-sanasa-blue-800 text-white py-2 overflow-hidden;
   }
 
   .news-ticker-content {
@@ -144,7 +144,7 @@
 @layer utilities {
   /* Text Gradient */
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-green-700 to-green-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-sanasa-blue-700 to-sanasa-blue-500;
   }
 
   /* Glassmorphism */
@@ -162,7 +162,7 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-green-500 rounded-full;
+    @apply bg-sanasa-blue-500 rounded-full;
   }
 
   /* Animation Utilities */

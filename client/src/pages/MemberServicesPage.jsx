@@ -12,7 +12,7 @@ export default function MemberServicesPage() {
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero */}
-        <section className="bg-sanasa-green-700 text-white py-12">
+        <section className="bg-sanasa-blue-700 text-white py-12">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="text-4xl font-bold mb-4">Member Services</h1>
             <p className="text-lg">All you need in one place</p>
@@ -70,7 +70,7 @@ export default function MemberServicesPage() {
                 { q: 'How long does loan approval take?', a: 'Usually 3-5 business days depending on application completeness.' },
               ].map((item, i) => (
                 <details key={i} className="border-b pb-4">
-                  <summary className="font-semibold cursor-pointer text-sanasa-green-700 hover:text-sanasa-green-800">
+                  <summary className="font-semibold cursor-pointer text-sanasa-blue-700 hover:text-sanasa-blue-800">
                     {item.q}
                   </summary>
                   <p className="text-gray-600 mt-2">{item.a}</p>

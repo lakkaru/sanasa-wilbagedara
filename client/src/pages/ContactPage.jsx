@@ -41,7 +41,7 @@ export default function ContactPage() {
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero */}
-        <section className="bg-sanasa-green-700 text-white py-12">
+        <section className="bg-sanasa-blue-700 text-white py-12">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
             <p className="text-lg">We'd love to hear from you</p>
@@ -65,7 +65,7 @@ export default function ContactPage() {
               <div className="bg-white rounded-lg shadow p-6">
                 <h3 className="text-xl font-bold mb-4">📞 Call Us</h3>
                 <p className="text-gray-700">
-                  <a href="tel:+94123456789" className="text-sanasa-green-700 hover:underline">
+                  <a href="tel:+94123456789" className="text-sanasa-blue-700 hover:underline">
                     +94 (0) 12-345-6789
                   </a>
                 </p>
@@ -74,7 +74,7 @@ export default function ContactPage() {
               <div className="bg-white rounded-lg shadow p-6">
                 <h3 className="text-xl font-bold mb-4">✉️ Email Us</h3>
                 <p className="text-gray-700">
-                  <a href="mailto:info@sanasawilbagedara.lk" className="text-sanasa-green-700 hover:underline">
+                  <a href="mailto:info@sanasawilbagedara.lk" className="text-sanasa-blue-700 hover:underline">
                     info@sanasawilbagedara.lk
                   </a>
                 </p>
@@ -94,7 +94,7 @@ export default function ContactPage() {
             <div className="bg-white rounded-lg shadow p-8">
               <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
               {success && (
-                <div className="bg-green-100 text-green-700 p-4 rounded mb-6">
+                <div className="bg-sanasa-blue-50 text-sanasa-blue-800 p-4 rounded mb-6">
                   Thank you! We'll get back to you soon.
                 </div>
               )}

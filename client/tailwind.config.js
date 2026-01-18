@@ -7,18 +7,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Sanasa Brand Colors
-        'sanasa-green': {
-          50: '#E8F5E8',
-          100: '#C8E6C9',
-          200: '#A5D6A7',
-          300: '#81C784',
-          400: '#66BB6A',
-          500: '#4CAF50',
-          600: '#43A047',
-          700: '#2D5A27',
-          800: '#1B5E20',
-          900: '#103D13',
+        // Sanasa Brand Colors (Primary Blue: #079AE8)
+        'sanasa-blue': {
+          50: '#E6F4FF',
+          100: '#CCE9FF',
+          200: '#99D4FF',
+          300: '#66C0FF',
+          400: '#33ABFF',
+          500: '#079AE8',
+          600: '#0688CC',
+          700: '#0573AD',
+          800: '#045C88',
+          900: '#034366',
         },
         'sanasa-gold': {
           50: '#FFF8E1',

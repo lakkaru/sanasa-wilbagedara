@@ -11,7 +11,7 @@ export default function AboutPage() {
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero */}
-        <section className="bg-sanasa-green-700 text-white py-12">
+        <section className="bg-sanasa-blue-700 text-white py-12">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="text-4xl font-bold mb-4">About Us</h1>
             <p className="text-lg">Serving the Wilbagedara community with trust and integrity</p>
@@ -46,30 +46,30 @@ export default function AboutPage() {
                   'Member Satisfaction',
                 ].map((value) => (
                   <li key={value} className="flex items-start">
-                    <span className="text-sanasa-green-700 font-bold mr-3">✓</span>
+                    <span className="text-sanasa-blue-700 font-bold mr-3">✓</span>
                     <span className="text-gray-700">{value}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="bg-sanasa-green-50 p-8 rounded-lg">
+            <div className="bg-sanasa-blue-50 p-8 rounded-lg">
               <h2 className="text-3xl font-bold mb-4">Quick Facts</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <p className="text-4xl font-bold text-sanasa-green-700">25+</p>
+                  <p className="text-4xl font-bold text-sanasa-blue-700">25+</p>
                   <p className="text-gray-600">Years of Service</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-sanasa-green-700">5000+</p>
+                  <p className="text-4xl font-bold text-sanasa-blue-700">5000+</p>
                   <p className="text-gray-600">Active Members</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-sanasa-green-700">50M+</p>
+                  <p className="text-4xl font-bold text-sanasa-blue-700">50M+</p>
                   <p className="text-gray-600">Loans Disbursed</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-sanasa-green-700">100M+</p>
+                  <p className="text-4xl font-bold text-sanasa-blue-700">100M+</p>
                   <p className="text-gray-600">Savings Mobilized</p>
                 </div>
               </div>

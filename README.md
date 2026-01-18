@@ -225,7 +225,7 @@ Font: Inter + Noto Sans Sinhala (for Sinhala text)
 ## 📞 Contact
 
 **Sanasa Bank Wilbagedara**
-- Location: Main Street, Wilbagedara, Kurunegala, Sri Lanka
+- Location:  Wilbagedara, Bandarakoswaththa, Sri Lanka
 - Phone: +94-XX-XXXXXXX
 - Email: info@sanasawilbagedara.lk
 - Facebook: https://www.facebook.com/sanasa.wilbagedara/

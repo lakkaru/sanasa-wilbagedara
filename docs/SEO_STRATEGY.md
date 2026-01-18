@@ -7,7 +7,7 @@
 
 **Target URL:** `/loans` or `/loan-schemes`
 **Page Priority:** High (Revenue-generating page)
-**Target Audience:** Local residents of Wilbagedara, Kurunegala District seeking affordable loans
+**Target Audience:** Local residents of Wilbagedara, Bandarakoswaththa seeking affordable loans
 
 ---
 
@@ -24,7 +24,7 @@ Low Interest Loans in Wilbagedara | Sanasa Bank Loan Schemes
 
 ### Meta Description (155-160 characters)
 ```
-Apply for low-interest loans at Sanasa Bank Wilbagedara. Personal loans, SME business loans (Divi Saviya), and agricultural loans for Kurunegala residents. Fast approval.
+Apply for low-interest loans at Sanasa Bank Wilbagedara. Personal loans, SME business loans (Divi Saviya), and agricultural loans for Bandarakoswaththa residents. Fast approval.
 ```
 
 **Alternative Descriptions:**
@@ -36,7 +36,7 @@ Apply for low-interest loans at Sanasa Bank Wilbagedara. Personal loans, SME bus
 |---------|---------------------|------------|----------|
 | Sanasa loan | High | Medium | 1 |
 | Low interest loans Wilbagedara | Medium | Low | 1 |
-| Personal loan Kurunegala | Medium | Medium | 2 |
+| Personal loan Bandarakoswaththa | Medium | Medium | 2 |
 | Agricultural loan Sri Lanka | High | High | 2 |
 | SME loan Sri Lanka | High | High | 3 |
 | Divi Saviya loan | Medium | Low | 1 |
@@ -44,7 +44,7 @@ Apply for low-interest loans at Sanasa Bank Wilbagedara. Personal loans, SME bus
 
 ### Secondary/Long-tail Keywords
 - "best loan for farmers Wilbagedara"
-- "small business loan Kurunegala"
+- "small business loan Bandarakoswaththa"
 - "sanasa membership benefits"
 - "cooperative bank loans Sri Lanka"
 - "low interest personal loan without collateral"
@@ -171,7 +171,7 @@ Apply for low-interest loans at Sanasa Bank Wilbagedara. Personal loans, SME bus
   <h2>Divi Saviya - SME & Business Loans</h2>
   <p>
     Grow your small business with <strong>Divi Saviya loans</strong> from 
-    Sanasa Wilbagedara. We support local entrepreneurs in Kurunegala District 
+    Sanasa Wilbagedara. We support local entrepreneurs in Bandarakoswaththa 
     with affordable financing for working capital, equipment purchase, and 
     business expansion.
   </p>
@@ -240,9 +240,9 @@ Apply for low-interest loans at Sanasa Bank Wilbagedara. Personal loans, SME bus
     "name": "Sanasa Bank Wilbagedara",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Main Street, Wilbagedara",
+      "streetAddress": " Wilbagedara",
       "addressLocality": "Wilbagedara",
-      "addressRegion": "Kurunegala",
+      "addressRegion": "Bandarakoswaththa",
       "postalCode": "60000",
       "addressCountry": "LK"
     },
@@ -398,13 +398,13 @@ Apply for low-interest loans at Sanasa Bank Wilbagedara. Personal loans, SME bus
 ### Local Citations:
 - Register on Sri Lankan business directories
 - SANASA movement website listing
-- Local Kurunegala business listings
+- Local Bandarakoswaththa business listings
 
 ### NAP Consistency:
 ```
 Sanasa Bank Wilbagedara
-Main Street, Wilbagedara
-Kurunegala District, Sri Lanka
+ Wilbagedara
+Bandarakoswaththa, Sri Lanka
 Phone: +94-XX-XXXXXXX
 ```
 
@@ -441,9 +441,9 @@ Phone: +94-XX-XXXXXXX
 Based on typical cooperative banking searches:
 - "sanasa loan apply online"
 - "cooperative bank loan rates Sri Lanka"
-- "rural banking loans Kurunegala"
+- "rural banking loans Bandarakoswaththa"
 - "best loan for small farmers Sri Lanka"
-- "microfinance loans Kurunegala"
+- "microfinance loans Bandarakoswaththa"
 
 ---
 

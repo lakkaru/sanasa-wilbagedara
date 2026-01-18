@@ -14,8 +14,8 @@ const LoadingSpinner = ({ fullScreen = false, size = 'md', text = 'Loading...' }
   const spinner = (
     <div className="flex flex-col items-center justify-center">
       <div className={`${sizeClasses[size]} relative`}>
-        <div className="absolute inset-0 border-4 border-green-200 rounded-full"></div>
-        <div className="absolute inset-0 border-4 border-green-600 rounded-full border-t-transparent animate-spin"></div>
+        <div className="absolute inset-0 border-4 border-sanasa-blue-200 rounded-full"></div>
+        <div className="absolute inset-0 border-4 border-sanasa-blue-600 rounded-full border-t-transparent animate-spin"></div>
       </div>
       {text && <p className="mt-4 text-gray-600 text-sm">{text}</p>}
     </div>

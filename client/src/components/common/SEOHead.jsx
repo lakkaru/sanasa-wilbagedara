@@ -21,7 +21,7 @@ const SEOHead = ({
     'Thrift and Credit Cooperative Sri Lanka',
     'Wilbagedara community banking',
     'Low interest loans Wilbagedara',
-    'Kurunegala cooperative bank',
+    'Bandarakoswaththa cooperative bank',
   ];
 
   const allKeywords = [...new Set([...keywords, ...defaultKeywords])];
@@ -62,7 +62,7 @@ const SEOHead = ({
       
       {/* Geographic Tags */}
       <meta name="geo.region" content="LK-NW" />
-      <meta name="geo.placename" content="Wilbagedara, Kurunegala" />
+      <meta name="geo.placename" content="Wilbagedara, Bandarakoswaththa" />
       
       {/* Language */}
       <meta httpEquiv="content-language" content="en, si" />
