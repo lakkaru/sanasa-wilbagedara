@@ -11,22 +11,37 @@ router.post('/', async (req, res) => {
   try {
     const { type, fullName, email, phone, subject, message } = req.body;
 
+    console.log('Received inquiry POST:', req.body);
+
     // Validation
     if (!fullName || !phone || !subject || !message) {
+      console.warn('Validation failed:', { fullName, phone, subject, message });
       return res.status(400).json({
         success: false,
         message: 'All required fields must be filled',
       });
     }
 
-    // TODO: Save inquiry to MongoDB
+    // Save inquiry to MongoDB
+    const Inquiry = require('../models/Inquiry');
+    const inquiry = new Inquiry({
+      type: type || 'general',
+      fullName,
+      email,
+      phone,
+      subject,
+      message,
+    });
+    const saved = await inquiry.save();
+    console.log('Inquiry saved:', saved);
 
     res.status(201).json({
       success: true,
       message: 'Inquiry submitted successfully. We will contact you soon.',
-      inquiryId: null,
+      inquiryId: inquiry._id,
     });
   } catch (error) {
+    console.error('Error saving inquiry:', error);
     res.status(500).json({
       success: false,
       message: error.message,

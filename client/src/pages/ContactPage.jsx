@@ -4,8 +4,8 @@ import WhatsAppButton from '../components/common/WhatsAppButton';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    fullName: '',
+    subject: '',
     phone: '',
     message: '',
   });
@@ -21,9 +21,18 @@ export default function ContactPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      // TODO: Submit to API
+      const response = await fetch('/api/inquiries', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to submit inquiry');
+      }
       setSuccess(true);
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ fullName: '', subject: '', phone: '', message: '' });
       setTimeout(() => setSuccess(false), 3000);
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -100,22 +109,22 @@ export default function ContactPage() {
               )}
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="form-label">Name</label>
+                  <label className="form-label">Full Name</label>
                   <input
                     type="text"
-                    name="name"
-                    value={formData.name}
+                    name="fullName"
+                    value={formData.fullName}
                     onChange={handleChange}
                     className="form-input"
                     required
                   />
                 </div>
                 <div>
-                  <label className="form-label">Email</label>
+                  <label className="form-label">Subject</label>
                   <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
+                    type="text"
+                    name="subject"
+                    value={formData.subject}
                     onChange={handleChange}
                     className="form-input"
                     required
